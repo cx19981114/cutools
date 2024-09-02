@@ -15,7 +15,8 @@ fn main() {
     builder.cuda(true).cudart("static").file(&source_path);
 
     builder
-        .flag("-arch=sm_86")
+        .flag("-arch=sm_90")
+        .flag("--generate-code=arch=compute_90,code=sm_90")
         .flag("--generate-code=arch=compute_86,code=sm_86")
         .flag("--generate-code=arch=compute_80,code=sm_80")
         .flag("--generate-code=arch=compute_75,code=sm_75")
