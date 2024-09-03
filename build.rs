@@ -16,6 +16,7 @@ fn main() {
 
     builder
         .flag("-t0")
+        .flag("--generate-code=arch=compute_90a,code=sm_90a")
         .flag("--generate-code=arch=compute_90,code=sm_90")
         .flag("--generate-code=arch=compute_86,code=sm_86")
         .flag("--generate-code=arch=compute_80,code=sm_80")
